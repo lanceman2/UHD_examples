@@ -30,7 +30,7 @@ UHD_CPPFLAGS := $(shell pkg-config uhd --cflags)
 
 
 
-build: $(BINS) uhd.tar.gz
+build: uhd.tar.gz $(BINS)
 
 $(BINS): %:%.o
 
